@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <!-- tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class=" text-5xl text-center font-bold mt-16">Deposite your <span class="text-purple-700 ">Moooooney</span></h1>
+
+    <main class=" w-3/4 m-auto">
+
+        <!-- balace-section -->
+        <section>
+            <div class="grid  grid-cols-3 gap-5 my-12">
+                <!-- depoite -->
+                <div class="bg-blue-200 rounded   p-8">
+                    <h3 class="text-2xl ">Deposite</h3>
+                    <h3 class="text-4xl  ">$<span id="deposite-balance">00</span></h3>
+                </div>
+
+                <!-- withdraw -->
+                <div class="bg-blue-200 rounded  p-8">
+                    <h3 class="text-2xl ">Withdraw</h3>
+                    <h3 class="text-4xl">$<span id="withdraw-balance">00</span></h3>
+                </div>
+
+                <!-- Total-balance -->
+                <div class="bg-blue-200 rounded  p-8">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h3 class="text-4xl">$ <span id="total-balance">00</span> </h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <!-- deposite-section -->
+            <div class="grid grid-cols-2  gap-5  ">
+                <div class="bg-purple-200 rounded p-4 w-72">
+                    <input id="deposite-input" class="border w-62 pborder-gr
+                ay-200  my-2 px-2 rounded " type="text" placeholder="$ deposite your amount">
+
+                    <button id="deposite-btn"
+                        class="bg-yellow-600 p-1 px-3 rounded font-bold text-white">Deposite</button>
+                </div>
+
+                <!-- Withdraw-section -->
+                <div class="bg-purple-200 rounded p-4 w-72">
+                    <input id="withdraw-input" class="border w-62 border-gr
+                ay-200  my-2  px-2 rounded " type="text" placeholder=" $ deposite your amount">
+
+                    <button id="withdraw-btn"
+                        class="bg-yellow-600 p-1 px-3 rounded font-bold text-white">Withdraw</button>
+                </div>
+
+                <script src="js/banking.js">
+
+                </script>
+
+
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
